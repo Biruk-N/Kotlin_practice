@@ -1,0 +1,3 @@
+run = "kotlinc -d main.jar main.kt && kotlin -classpath main.jar MainKt"
+
+entrypoint = "main.kt"
