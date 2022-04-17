@@ -24,6 +24,51 @@ fun main(args: Array<String>) {
 
     println(fullName)
 //    sum(2, 6)
+//    Kotlin Operators
+    var sum1 = 100 + 50       // 150 (100 + 50)
+    var sum2 = sum1 + 250     // 400 (150 + 250)
+    var sum3 = sum2 + sum2
+//    Kotlin Strings
+    var greeting = "Hello"
+//    Note: If you want to create
+//    a String without assigning the value (and assign the value later),
+//    you must specify the type while declaring the variable:
+    var greeting2: String = "Hello"
+    println(greeting)
+    println(greeting2)
+
+    var txt = "Hello World"
+    println(txt[0]) // first element (H)
+    println(txt[2]) // third element (l)
+    println("The length of the txt string is: " + txt.length)
+    println(txt.toUpperCase())
+    println(txt.toLowerCase())
+    println(txt)//Hello World
+
+    var txt1 = "Hello World"
+    var txt2 = "Hello World"
+    println(txt1.compareTo(txt2))
+    println(txt.indexOf("o"))//4
+
+    var txtTest = "It's alright"
+    println(txtTest)
+//    concatenation
+//    println(txt + " " + txtTest)
+//    but better way is String Templates/Interpolation
+    println("$txt $txtTest")
+    println("$txt \n\t\t$txtTest")
+
+    var fName = "Bir "
+    var lName = "N"
+    println(fName.plus(lName))
+
+//    Kotlin Booleans
+    val isKotlinFun: Boolean = true
+    val isFishTasty: Boolean = false
+    println(isKotlinFun)   // Outputs true
+    println(isFishTasty)   // Outputs false
+//    Kotlin If ... Else
+
 }
 
 
